@@ -1,13 +1,17 @@
 package com.taufansamudra.devtest.utils;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.taufansamudra.devtest.repositories.AccountRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +22,9 @@ public class JwtUtil {
 
     @Autowired
     private AccountRepository accountRepository;
-    private String secret = "TaufaN";
+
+    @Value("jwt.secret")
+    private String secret;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -58,5 +64,12 @@ public class JwtUtil {
     public Boolean validateToken(String token, UserDetails userDetails) {
         final String username = extractUsername(token);
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
+    }
+
+    public Map<String, Object> payloadToMap(String token) throws JsonProcessingException {
+        Base64.Decoder decoder = Base64.getUrlDecoder();
+        String payload = new String(decoder.decode(token.split("\\.")[1]));
+        Map<String, Object> mapPayload = new ObjectMapper().readValue(payload, HashMap.class);
+        return mapPayload;
     }
 }

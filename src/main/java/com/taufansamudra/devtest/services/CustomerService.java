@@ -27,7 +27,7 @@ public class CustomerService {
         var customers = customerRepository.findAllByCreatedBy(createdBy);
 
         resultMap.put("data", customers);
-        if (customers.isEmpty()) {
+        if (Objects.isNull(customers)) {
             resultMap.put("message", "no customers found");
         } else {
             resultMap.put("message", "customers fetched");
@@ -72,7 +72,7 @@ public class CustomerService {
         resultMap.put("data", customerRepository.saveAndFlush(customer));
         resultMap.put("message", "new customer created");
 
-        return new ResponseEntity(resultMap, HttpStatus.OK);
+        return new ResponseEntity(resultMap, HttpStatus.CREATED);
     }
 
     public ResponseEntity<Object> updateCustomer(CustomerDto customerDto, UUID createdBy) {

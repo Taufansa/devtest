@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1Mzg3ODQ1LCJpYXQiOjE2NzUzNTE4NDV9.ckH0uP34YybBvBIupgycJd4CP5b5EOo4KXGZcviyaGk",
 						"type": "text"
 					},
 					{
@@ -55,12 +55,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
-						"type": "text"
-					},
-					{
-						"key": "USER-ID",
-						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1Mzg3ODQ1LCJpYXQiOjE2NzUzNTE4NDV9.ckH0uP34YybBvBIupgycJd4CP5b5EOo4KXGZcviyaGk",
 						"type": "text"
 					}
 				],
@@ -100,12 +95,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
-						"type": "text"
-					},
-					{
-						"key": "USER-ID",
-						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1Mzg3ODQ1LCJpYXQiOjE2NzUzNTE4NDV9.ckH0uP34YybBvBIupgycJd4CP5b5EOo4KXGZcviyaGk",
 						"type": "text"
 					}
 				],
@@ -145,12 +135,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
-						"type": "text"
-					},
-					{
-						"key": "USER-ID",
-						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1Mzg3ODQ1LCJpYXQiOjE2NzUzNTE4NDV9.ckH0uP34YybBvBIupgycJd4CP5b5EOo4KXGZcviyaGk",
 						"type": "text"
 					}
 				],
@@ -164,7 +149,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:6060/api/v1/customer/detail/3",
+					"raw": "http://localhost:6060/api/v1/customer/detail/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -175,7 +160,7 @@
 						"v1",
 						"customer",
 						"detail",
-						"3"
+						"2"
 					]
 				}
 			},
@@ -188,7 +173,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1Mzg3ODQ1LCJpYXQiOjE2NzUzNTE4NDV9.ckH0uP34YybBvBIupgycJd4CP5b5EOo4KXGZcviyaGk",
 						"type": "text"
 					},
 					{

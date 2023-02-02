@@ -22,3 +22,5 @@ spring:
     properties:
       hibernate:
         format_sql: "${SQL_FORMAT_SQL:false}"
+jwt:
+  secret: "TaufaN"
