@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "f7d9a341-71f7-4ab0-b97b-c8aa05c26797",
+		"name": "Devtest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12138642"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"type": "text"
+					},
+					{
+						"key": "USER-ID",
+						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : null,\n    \"name\" : \"akbar\",\n    \"phone\" : \"083873360540\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/customer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"type": "text"
+					},
+					{
+						"key": "USER-ID",
+						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"name\" : \"akbar\",\n    \"phone\" : \"083873360540\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/customer/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"type": "text"
+					},
+					{
+						"key": "USER-ID",
+						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"name\" : \"akbar\",\n    \"phone\" : \"083873360540\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/customer/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Customer Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"type": "text"
+					},
+					{
+						"key": "USER-ID",
+						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"name\" : \"akbar\",\n    \"phone\" : \"083873360540\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/customer/detail/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Destroy Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXVmYW5zYSIsImJ2IjoiMjUxOGUxOGQtMDk5Zi00NjI4LTk0NWUtMGUxNDY4ZDg0NDNmIiwiZXhwIjoxNjc1MzY0OTAyLCJpYXQiOjE2NzUzMjg5MDJ9.jaNwd99y76BjTJ3jvQY2fHXga2jXO67LM0M8svWJlnk",
+						"type": "text"
+					},
+					{
+						"key": "USER-ID",
+						"value": "2518e18d-099f-4628-945e-0e1468d8443f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"name\" : \"akbar\",\n    \"phone\" : \"083873360540\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/customer/destroy/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"destroy",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"taufansa\",\n    \"password\" : \"taufan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/account/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : null,\n    \"username\" : \"taufansa\",\n    \"password\" : \"taufan\",\n    \"full_name\" : \"Taufan Samudra Akbar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/api/v1/account/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
