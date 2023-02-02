@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:6060}
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    url: "jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${DB_NAME:devtest}"
+    username: "${DB_USERNAME:postgres}"
+    password: "${DB_PASSWORD:postgres}"
+    hikari:
+      max-lifetime: "${DB_MAX_LIFE_TIME:240000}" # in milliseconds
+      minimum-idle: "${DB_MIN_POOL:0}"
+      maximum-pool-size: "${DB_MAX_POOL:5}"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: "${SQL_SHOW_SQL:false}"
+    properties:
+      hibernate:
+        format_sql: "${SQL_FORMAT_SQL:false}"
